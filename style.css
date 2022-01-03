@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #bdc1c6;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    background: #202124;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    height: 3em;
+    padding-top: 2em;
+    margin-bottom: 2em;
+}
+.header-list{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.header-list li a{
+    list-style: none;
+    text-decoration: none;
+    color: #bdc1c6;
+    margin-right: 0.8em;
+    padding: 0.5em;
+}
+
+.header-list li a:hover{
+    border-bottom: 1px solid gray;
+}
+
+
+.header-list li:last-child{
+    list-style: none;
+    text-decoration: none;
+    margin-right: 1em;
+    padding: 0.2em 0 ;
+    margin-top: 0;
+    
+    
+}
+.login{
+    background: #3254b8;
+    border-radius: 0.2em;
+}
+
+.login:hover{
+    background: #5773ca;
+    
+    border-bottom: none;
+}
+
+/* Main */
+
+.main-header{
+    font-size: 5em;
+    color: white;
+    text-align: center;
+    
+}
+
+/*main finder*/
+
+.input-finder{
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px solid gray;
+    border-radius: 2em;
+    width: 20em;
+    margin: 0 auto;
+    margin-top: 2em;
+    
+}
+
+.finder{
+    width: 24em;
+    height: 2.5em;
+    background: #202124;
+    outline: none;
+    border: none;
+    color: white;
+    
+}
+
+/*Buttons*/
+
+.buttons{
+    display: flex;
+    justify-content:center;
+    
+}
+
+.buttons a{
+    text-decoration: none;
+    color: white;
+    background: #303134;
+    padding: 0.8em;
+    margin: 1em 0.5em;
+    border-radius: 0.3em;
+}
+
+.try-other-language{
+    font-size: 1em;
+    width: max-content;
+    margin: 2em auto; 
+}
+
+.try-other-language a{
+    text-decoration: none;
+}
+
+.btn:hover{
+    outline: 1px solid rgb(114, 110, 110);
+}
+
+footer{
+    background: #171717;
+    color: #999da2;
+    min-height: 6em;
+    width: 100%;
+    position: absolute;
+    bottom: 0; 
+}
+
+.pre-footer-heading{
+    font-size: 1em;
+    padding: 0.5em ;
+    border-bottom: 1px solid #212327;
+    
+}
+
+.footer-list{
+    margin-top: 1em;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none; 
+      
+}
+
+
+
+
+.footer-list li ul{
+    display: flex;
+    list-style: none;
+}
+
+.footer-list li ul li {
+    display: flex;
+    list-style: none;
+    padding: 0.3em;
+}
+
+.leaf{
+    color: yellowgreen;
+    font-size: 1.2em;
+    margin-right: 0.2em;
+}
+
+
+.footer-list li ul li:hover {
+    border-bottom: 1px solid gray;
+}
+
+
+/* media-queries*/
+
+@media (max-width: 600px) {
+    .footer-list {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    
+.try-other-language{
+    visibility: hidden;
+}
+}
